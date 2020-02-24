@@ -6,11 +6,12 @@
     <title>VL.Skia3d</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.Skia3d</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Set of nodes for simple 3d visualizations with VL</summary>
     <description>Set of nodes for simple 3d visualizations with VL</description>
     <tags>VL, 3d, skia</tags>
+	<license type="expression">LGPL-3.0-only</license>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
