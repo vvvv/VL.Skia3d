@@ -4101,13 +4101,13 @@
                   </Node>
                 </Patch>
               </Node>
-              <ControlPoint Id="Koafv88pziDP9SfS4KkuRV" Bounds="597,259" />
-              <Pad Id="SEWZ3yIRy30LeLAWek2UWR" Comment="Near Plane" Bounds="667,291,31,15" ShowValueBox="true" isIOBox="true" Value="1">
+              <ControlPoint Id="Koafv88pziDP9SfS4KkuRV" Bounds="615,256" />
+              <Pad Id="SEWZ3yIRy30LeLAWek2UWR" Comment="Near Plane" Bounds="657,313,31,15" ShowValueBox="true" isIOBox="true" Value="1">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="MxeinsCv93ZPa1v97rU6n1" Comment="Far Plane" Bounds="699,319,37,15" ShowValueBox="true" isIOBox="true" Value="100">
+              <Pad Id="MxeinsCv93ZPa1v97rU6n1" Comment="Far Plane" Bounds="678,341,37,15" ShowValueBox="true" isIOBox="true" Value="100">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
@@ -4164,23 +4164,19 @@
                   <Choice Kind="TypeFlag" Name="Vector3" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="595,288,46,19" Id="DHf3q0Lf8dePSkNIvoZBKY">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Vector (Split)" />
-                  <CategoryReference Kind="Vector2Type" Name="Vector2" NeedsToBeDirectParent="true" />
-                </p:NodeReference>
-                <Pin Id="KMr9JYwJn2mP1F0OTlKnD6" Name="Input" Kind="StateInputPin" />
-                <Pin Id="SieNj5zjQX7MdgcMOAjthx" Name="X" Kind="OutputPin" />
-                <Pin Id="ToOOgY79FzYPfCV9qHqAQY" Name="Y" Kind="OutputPin" />
-              </Node>
+              <ControlPoint Id="Fk20XKR3AetLEnRPJE7hiz" Bounds="636,283" />
             </Canvas>
             <Patch Id="QBNTnL08W0bPjNuQIfMGeo" Name="Create" />
             <Patch Id="PY6jiwZZnQIO8mLruhPQsH" Name="Update" ManuallySortedPins="true">
               <Pin Id="MC4ALHGajJdQVGUxlmLvlD" Name="Input" Kind="InputPin" Bounds="785,347" />
               <Pin Id="ElSmKdJKg0TOce2J4wrCf2" Name="Transformation" Kind="InputPin" Bounds="872,612" />
-              <Pin Id="OwegaHZQeAnM2ci9vxUZYW" Name="FOV" Kind="InputPin" />
+              <Pin Id="OwegaHZQeAnM2ci9vxUZYW" Name="Vertical FOV" Kind="InputPin" DefaultValue="0.12">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="PjbQsO4AYpzPAIqesRx0rz" Name="Output" Kind="OutputPin" Bounds="464,604" />
+              <Pin Id="Okj30Dhs1r4QMjRNr9cTT3" Name="Aspect" Kind="InputPin" Bounds="668,247" />
             </Patch>
             <ProcessDefinition Id="MWWfIpG5rO5Qd98Uum28zx">
               <Fragment Id="Vk7rmL78EwkOnIR5BOEofI" Patch="QBNTnL08W0bPjNuQIfMGeo" Enabled="true" />
@@ -4206,10 +4202,11 @@
             <Link Id="MlCsCE3WsYPNXMqBK0MNVh" Ids="SEWZ3yIRy30LeLAWek2UWR,EHCbln7KBEFNVhkgLpp4GN" />
             <Link Id="LLH7fnK2EYfPhKvBCnn5wi" Ids="MxeinsCv93ZPa1v97rU6n1,OvLEpGXVmekMavlMMWfNhL" />
             <Link Id="MptL5taTYPcLlevo578iA9" Ids="HOM18XwFvQ6M7YOSiwqasa,STzG9CbAGOYMzyLPlPclD3" />
-            <Link Id="DxJoxcGlWUiP0FWB7YMv2z" Ids="Koafv88pziDP9SfS4KkuRV,KMr9JYwJn2mP1F0OTlKnD6" />
             <Link Id="B3mZgwQAl6mLkCB5Luzh7v" Ids="DuuezY71SuZQAPyauRnYb0,AKHi6fThaU6PTbkyNGGd9J" />
             <Link Id="QnUhvOGAznvMs3BtU1jXw9" Ids="KAO8Tb2QLgjNtxLHs3FHzW,A7mZlQAIjygNHkjdSU1OZq" />
-            <Link Id="P4YA7PzduFsPryAHDYSJCs" Ids="ToOOgY79FzYPfCV9qHqAQY,R9oTfa2hDHzMeRt0CNU6xL" />
+            <Link Id="GssA5XHDoMAPpxJXmUZX53" Ids="Fk20XKR3AetLEnRPJE7hiz,LcBtI9gdLAmOagzKpgTmBE" />
+            <Link Id="H8jLQ0laSCDLNdyFJVdjGM" Ids="Okj30Dhs1r4QMjRNr9cTT3,Fk20XKR3AetLEnRPJE7hiz" IsHidden="true" />
+            <Link Id="BJTNVVgu9foL631ky1An3z" Ids="Koafv88pziDP9SfS4KkuRV,R9oTfa2hDHzMeRt0CNU6xL" />
           </Patch>
         </Node>
       </Canvas>
