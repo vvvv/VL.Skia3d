@@ -20,7 +20,7 @@ jobs:
       uses: nuget/setup-nuget@v1
       
     - name: Nuget Pack
-      run: nuget pack ./deployment/VL.Skia3d.nuspec -Version $VERSION
+      run: nuget pack ./deployment/VL.Skia3d.nuspec -Version ${{env.VERSION}}
       env:
         VERSION: 1.1.0
       
