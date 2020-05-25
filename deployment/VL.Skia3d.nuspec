@@ -12,10 +12,11 @@
     <description>Set of nodes for simple 3d visualizations with VL</description>
     <tags>VL, 3d, skia</tags>
     <license type="expression">LGPL-3.0-only</license>
-    <icon>..\nugeticon.png</icon>
+    <icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
+    <file src="nugeticon.png" target="icon\" />
   </files>
 </package>
