@@ -21,11 +21,8 @@ jobs:
       id: foo
       with:
         file-url: 'https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png'
-        location: '.deployment' 
-    
-    - name: Print the file path
-      run: echo "The file was downloaded to ${{ steps.foo.outputs.file-path }}"
-        
+        location: './deployment' 
+
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
       
