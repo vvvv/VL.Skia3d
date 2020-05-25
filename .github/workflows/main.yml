@@ -18,10 +18,14 @@ jobs:
 
     - name: Download Icon
       uses: carlosperate/download-file-action@v1.0.3
+      id: foo
       with:
         file-url: 'https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png'
         file-name: 'nugeticon.png' 
         location: './icon'
+    
+    - name: Print the file path
+      run: echo "The file was downloaded to ${{ steps.foo.outputs.file-path }}"
         
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
