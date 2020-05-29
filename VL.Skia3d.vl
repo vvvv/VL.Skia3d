@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Jb11GJwujeCLEOnsQRU2xd" LanguageVersion="2020.1.2.130" Version="0.128">
-  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.2-0130-g0559993bd7" />
+<Document xmlns:p="property" Id="Jb11GJwujeCLEOnsQRU2xd" LanguageVersion="2020.1.2.135" Version="0.128">
+  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.2" />
   <Patch Id="PIU7VnFDHIeQPpL3CwISFJ">
     <Canvas Id="PRTG3akyaftPIAex3sDiTR" DefaultCategory="Graphics.Skia3d" CanvasType="FullCategory">
       <Canvas Id="Nit7UapJQnVQLaapiZc3uS" Name="Internal" Position="498,191">
@@ -2371,11 +2371,6 @@
                   <Pin Id="FfOO13nZuGWP4Z5IR8v6rX" Name="Z" Kind="InputPin" />
                   <Pin Id="TYTjTXY2NYQMAJnK27GmUy" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="Dmnmj2rWqK1NgcHjge4JFO" Comment="" Bounds="99,580,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Float32" />
-                  </p:TypeAnnotation>
-                </Pad>
                 <Node Bounds="475,688,58,19" Id="SoZnuvzKjfzNyZiKJLnlW9">
                   <p:NodeReference LastCategoryFullName="3D.Transform" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2471,6 +2466,7 @@
                   </Pin>
                   <Pin Id="Q4SIJNQ4LqROp10gGDmVn7" Name="Output" Kind="OutputPin" />
                 </Node>
+                <ControlPoint Id="AUhTRiIsIKjLKU17ZHgTOh" Bounds="88,561" />
               </Canvas>
               <Patch Id="E5lzjSLFcibOkD3YEuQIg2" Name="Create" />
               <Patch Id="S2dpeZ1w58uNmZzFccjPRS" Name="Update" ManuallySortedPins="true">
@@ -2481,6 +2477,11 @@
                 <Pin Id="KZxV4nP4aphPD57FQUIV5g" Name="Direction" Kind="InputPin" Bounds="468,464" />
                 <Pin Id="ITiaTtjrVUcOatlF5NTbr5" Name="Color" Kind="InputPin" Bounds="901,599" />
                 <Pin Id="CQKB0jnBtdIMXcntYwWblz" Name="Stroke Width" Kind="InputPin" Bounds="963,598" />
+                <Pin Id="Gg5Jc8rzS5hM4RVKqrIpnJ" Name="Thickness" Kind="InputPin" Bounds="142,463" DefaultValue="0.05">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
               </Patch>
               <ProcessDefinition Id="L9OKMRzwe6uObny7ObaYCA">
                 <Fragment Id="USptWvJnQW7NfrJzBQTWpI" Patch="E5lzjSLFcibOkD3YEuQIg2" Enabled="true" />
@@ -2492,8 +2493,6 @@
               <Link Id="JbG9PrbfQBrPrXbQVXrv7m" Ids="RO05yaFYsJaNNjN5xqfSue,NGCi3k8iY5uMbt7ZP7WU29" />
               <Link Id="BOlDhW6iJ0CPNbBvh4mkpH" Ids="Qx6GAIrDXqkPoOndS0wi6V,HoS3vSOCeADNXYGybjwcxA" />
               <Link Id="U4HCGfgxUcYNQAcouIGTEl" Ids="Lvd7UqMFg1cNjFIHHQKHv1,Qa4hnr7nZnVPhsCp2SAeJR" />
-              <Link Id="QQgSRafVijCN2ffLaq6PdA" Ids="Dmnmj2rWqK1NgcHjge4JFO,PxPe87LiHpBNDOgRLE3rxw" />
-              <Link Id="C9Q6oHw4IHVMkGtPaleb6r" Ids="Dmnmj2rWqK1NgcHjge4JFO,FfOO13nZuGWP4Z5IR8v6rX" />
               <Link Id="BxExQmvJcWeLBj0BraN3J4" Ids="SoBZWThZB7ZLX3zxBGOHUY,JcBuGcP4ibNM4RNhrnQI6U" />
               <Link Id="DTc8XxPrqN6PDScCTn9Qnt" Ids="Tz56fcHQR9UMXI7CdWomYs,MXLGneq5ER8MA1kxxhjig4" />
               <Link Id="CPDeaA5wv9zOKcjN1hl6gy" Ids="LqHxI2JuW1zQPos4YAx7HV,Tz56fcHQR9UMXI7CdWomYs" IsHidden="true" />
@@ -2512,6 +2511,9 @@
               <Link Id="VPSOrB6KButMt7sGQXhg44" Ids="CQKB0jnBtdIMXcntYwWblz,Q3Re0EGqL76Lf1YWCbSO5f" IsHidden="true" />
               <Link Id="TuUbiNp9xOZPHl8J8aBLR0" Ids="MgT8r3i6t3ZPcgm1hXEQpc,DkqQR9zKM8SPWBdpq4reso" />
               <Link Id="NmyOAwISYQSMYE9tj0p9N1" Ids="Q4SIJNQ4LqROp10gGDmVn7,VvCHPeCuN1HPaBWcw5SjtN" />
+              <Link Id="K71i9p7VDAPLVbJlYTP595" Ids="Gg5Jc8rzS5hM4RVKqrIpnJ,AUhTRiIsIKjLKU17ZHgTOh" IsHidden="true" />
+              <Link Id="B4X6vanB3SrLHkmrbQyjvN" Ids="AUhTRiIsIKjLKU17ZHgTOh,PxPe87LiHpBNDOgRLE3rxw" />
+              <Link Id="B8nP2qCvNn8POvB3JQzfwR" Ids="AUhTRiIsIKjLKU17ZHgTOh,FfOO13nZuGWP4Z5IR8v6rX" />
             </Patch>
           </Node>
           <!--
@@ -2667,7 +2669,7 @@
                   </Pin>
                   <Pin Id="QUvGvMkmIYBMSVzJ2WPCMu" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="RtyvGhzmgDtQA5bydaZzqM" Bounds="142,463" />
+                <ControlPoint Id="RtyvGhzmgDtQA5bydaZzqM" Bounds="127,526" />
               </Canvas>
               <Patch Id="Gb7S7xccTGDOA4ZBRNwVc0" Name="Create" />
               <Patch Id="QxdSTA4Fl4QMOx28DRRP5G" Name="Update" ManuallySortedPins="true">
@@ -2678,7 +2680,7 @@
                 <Pin Id="GJm6eWebAOcNDxBD6UEMMA" Name="Direction" Kind="InputPin" Bounds="468,464" />
                 <Pin Id="HoAHIOIexmCMT4Im7hLLGL" Name="Color" Kind="InputPin" Bounds="943,581" />
                 <Pin Id="Kk19rpMXWX9MlAWXkKkwUX" Name="Stroke Width" Kind="InputPin" Bounds="1000,577" />
-                <Pin Id="JZa4jEum1rgPLiPqlGXNv5" Name="Thickness" Kind="InputPin" Bounds="142,463" DefaultValue="1">
+                <Pin Id="JZa4jEum1rgPLiPqlGXNv5" Name="Thickness" Kind="InputPin" Bounds="142,463" DefaultValue="0.05">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -2775,11 +2777,6 @@
                   <Pin Id="Mg5FAftpZb1LwIQ18bdMuB" Name="Z" Kind="InputPin" />
                   <Pin Id="TAdI7z5cNEFOEjaY4DEZai" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="VYH5NUFIYnnPYPlXZSJLwb" Comment="" Bounds="268,566,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Float32" />
-                  </p:TypeAnnotation>
-                </Pad>
                 <Node Bounds="533,677,58,19" Id="KQyOIJjWvZZNn5DYa8T4qi">
                   <p:NodeReference LastCategoryFullName="3D.Transform" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2875,6 +2872,7 @@
                   <Pin Id="PXDsRkGipTAP937OX9Tjiz" Name="Rotation" Kind="InputPin" />
                   <Pin Id="RbvkKQJuHvsNbFedB878qw" Name="Result" Kind="OutputPin" />
                 </Node>
+                <ControlPoint Id="IArdDr2WCwSNRSBvGSevpb" Bounds="267,560" />
               </Canvas>
               <Patch Id="M9PlpL9tk9kOzN48kzzaO5" Name="Create" />
               <Patch Id="TXdbaq3kj0RNnaFifawvA9" Name="Update" ManuallySortedPins="true">
@@ -2885,6 +2883,11 @@
                 <Pin Id="U28x9TXwaGXPuUjBrqaBwZ" Name="Direction" Kind="InputPin" Bounds="468,464" />
                 <Pin Id="TcHMLsttJvcLshCiWNiJ7m" Name="Color" Kind="InputPin" Bounds="901,599" />
                 <Pin Id="LV3KxU2ImgQOZkQmGs4ojp" Name="Stroke Width" Kind="InputPin" Bounds="963,598" />
+                <Pin Id="FKeo2qc5BlZMQmm7vbBNMa" Name="Thickness" Kind="InputPin" Bounds="142,463" DefaultValue="0.05">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
               </Patch>
               <ProcessDefinition Id="To0YkpUwACoMRt2YRtA1Lm">
                 <Fragment Id="InsT2OJh0wUL15HyHEE2r8" Patch="M9PlpL9tk9kOzN48kzzaO5" Enabled="true" />
@@ -2896,7 +2899,6 @@
               <Link Id="EzhQ913idT6LWanfMAhWIO" Ids="PL6Gvp3IqT3O3g6GtGbQvj,KyC2WFkKho9QaQBQDJdAsV" />
               <Link Id="RUrxjj7LXoAOFagPyL2QQ6" Ids="AZUb5epsnvYO3xeJbuKU8W,ShPd3ftCSgcMJImQa0jRgr" />
               <Link Id="EeEZmMrkaLfMkMMPpwwnjC" Ids="PJJq3GbG55aMoqeamh5JkS,SXK8nO9mSBaMLDvWeMGTQi" />
-              <Link Id="R7lfJs5Vyu7PLabJdVVkuw" Ids="VYH5NUFIYnnPYPlXZSJLwb,Mg5FAftpZb1LwIQ18bdMuB" />
               <Link Id="LRGEz9ESko4Pg9PxpSkcT3" Ids="OYNOR4y22byQHtZxcFmgHu,GzlBis8TZVmLBix2DRyMvQ" />
               <Link Id="QpaiQO9hiHFL6SkHg5WjPU" Ids="EoO2GnR3RMoM8niWYmMSOC,OYNOR4y22byQHtZxcFmgHu" IsHidden="true" />
               <Link Id="HzZXBDOLNAwNPyZZHZrzL5" Ids="UFhZ9EknjzcQMiHZGZdq3I,J95idv9bVXGNgZ0BTdM9tN" IsHidden="true" />
@@ -2911,11 +2913,13 @@
               <Link Id="HUbTyNHF4LTMEEZK4niGvD" Ids="NVwH9VFyVIrPRASy9FUsTv,SWCAELHSammLtmGTrsuCzh" />
               <Link Id="ONrXSHZCRq5OYbJTcRGEjM" Ids="LV3KxU2ImgQOZkQmGs4ojp,NVwH9VFyVIrPRASy9FUsTv" IsHidden="true" />
               <Link Id="Vg0WRaTGtKkOHLlnrJBxaO" Ids="Myh93NjBflGORLL1oLp5hk,IGAJQDlS5OYNEhA1BUR4XN" />
-              <Link Id="SVzNTeyjCLGOgoC7Fmf5Tz" Ids="VYH5NUFIYnnPYPlXZSJLwb,OpmYvSDMbW7QU9N7lDxeDl" />
               <Link Id="NFfZaVHIvg4PcvZWDai6w9" Ids="Pnz7nJBSU3APYrQfokIUr5,P1STiUotr5zOHDiF7xZ4jw" />
               <Link Id="TB309Ry0XZ6MsNtzL1RQmW" Ids="FilL9isR6bcMngBB1x9zB0,KcUlXqGt0ztNrqY8NxTzTW" />
               <Link Id="MvdYyVD9nStNZeJMrr2ZNh" Ids="J95idv9bVXGNgZ0BTdM9tN,PXDsRkGipTAP937OX9Tjiz" />
               <Link Id="H1OpR3UxX7RPFxkx3uTtVc" Ids="RbvkKQJuHvsNbFedB878qw,JDtV2Qsr453MutZ2FJ0p3T" />
+              <Link Id="Nb96PvSdiPCNSHliMKJ1E0" Ids="FKeo2qc5BlZMQmm7vbBNMa,IArdDr2WCwSNRSBvGSevpb" IsHidden="true" />
+              <Link Id="RECoCPn8ZPXP3Pd2jYP3jX" Ids="IArdDr2WCwSNRSBvGSevpb,OpmYvSDMbW7QU9N7lDxeDl" />
+              <Link Id="OdYTkZmoyc6PEN3uqBywyz" Ids="IArdDr2WCwSNRSBvGSevpb,Mg5FAftpZb1LwIQ18bdMuB" />
             </Patch>
           </Node>
         </Canvas>
@@ -4484,6 +4488,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.2-0130-g0559993bd7" />
-  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.2-0130-g0559993bd7" />
+  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.2" />
+  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.2" />
 </Document>
