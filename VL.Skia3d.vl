@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" Id="Jb11GJwujeCLEOnsQRU2xd" LanguageVersion="2020.1.2.135" Version="0.128">
-  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.2" />
+  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.2-0130-g0559993bd7" />
   <Patch Id="PIU7VnFDHIeQPpL3CwISFJ">
     <Canvas Id="PRTG3akyaftPIAex3sDiTR" DefaultCategory="Graphics.Skia3d" CanvasType="FullCategory">
       <Canvas Id="Nit7UapJQnVQLaapiZc3uS" Name="Internal" Position="498,191">
@@ -4405,7 +4405,7 @@
               <ControlPoint Id="FmyEo8kI8ohQFvERuBKfQA" Bounds="347,397" Alignment="Top" />
               <ControlPoint Id="O0fDdPTZXPFMSNdUlAFNdi" Bounds="367,603" Alignment="Bottom" />
             </Node>
-            <ControlPoint Id="RNixuo8DYZwOfGFFYqxTfz" Bounds="349,291" />
+            <ControlPoint Id="RNixuo8DYZwOfGFFYqxTfz" Bounds="344,275" />
             <Node Bounds="362,639,44,19" Id="HZOp5mQO3QCPezRBILEF8M">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -4421,17 +4421,7 @@
           </Canvas>
           <Patch Id="BUYs0ZoesAgP2hKX1e0wOX" Name="Create (Internal)" />
           <Patch Id="IUtw2yzfZetNLqixZXHhke" Name="Update (Internal)">
-            <Pin Id="ToEGPRpxzHdMHBvOiZPbrJ" Name="Input" Kind="InputPin" Bounds="633,358" PinGroupDefaultCount="2">
-              <p:TypeAnnotation>
-                <Choice Kind="TypeFlag" Name="Sequence" />
-                <p:TypeArguments>
-                  <TypeReference>
-                    <Choice Kind="TypeFlag" Name="Layer3d" />
-                  </TypeReference>
-                </p:TypeArguments>
-              </p:TypeAnnotation>
-              <p:DefaultValue />
-            </Pin>
+            <Pin Id="ToEGPRpxzHdMHBvOiZPbrJ" Name="Input" Kind="InputPin" Bounds="633,358" PinGroupDefaultCount="2" />
             <Pin Id="LCU8IITPFnDOxv49KKcw6F" Name="Enabled" Kind="InputPin" Bounds="751,530" DefaultValue="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -4488,6 +4478,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.2" />
-  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.2" />
+  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.2-0130-g0559993bd7" />
+  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.2-0130-g0559993bd7" />
 </Document>
