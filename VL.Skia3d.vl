@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Jb11GJwujeCLEOnsQRU2xd" LanguageVersion="2020.1.2.135" Version="0.128">
-  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.2-0130-g0559993bd7" />
+<Document xmlns:p="property" Id="Jb11GJwujeCLEOnsQRU2xd" LanguageVersion="2020.1.4.167" Version="0.128">
+  <NugetDependency Id="KzBjy9EuDx0NUgYNovOeHi" Location="VL.CoreLib" Version="2020.1.4" />
   <Patch Id="PIU7VnFDHIeQPpL3CwISFJ">
     <Canvas Id="PRTG3akyaftPIAex3sDiTR" DefaultCategory="Graphics.Skia3d" CanvasType="FullCategory">
       <Canvas Id="Nit7UapJQnVQLaapiZc3uS" Name="Internal" Position="498,191">
@@ -1130,15 +1130,17 @@
                 <Pin Id="OpArkUYWQdsNZq8TEp6WrM" Name="Size" Kind="InputPin" />
                 <Pin Id="KjLlqvO3jrLORflEsUkCFW" Name="Resolution" Kind="InputPin" />
                 <Pin Id="KEP2THxl74GPZwT2i57fwl" Name="Color" Kind="InputPin" />
-                <Pin Id="Npi876gb64kQcCOM7gy0gQ" Name="Stroke Width" Kind="InputPin" />
+                <Pin Id="Npi876gb64kQcCOM7gy0gQ" Name="Stroke Width" Kind="InputPin" DefaultValue="0">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
                 <Pin Id="NB6aH4j1UfpOonmAY5GKO6" Name="Enabled" Kind="InputPin" />
                 <Pin Id="FTqVw6yjvufL8LmWHZRLcC" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="NH9h5ONNbvYMj6dvK3XSWT" Bounds="388,381" />
-              <ControlPoint Id="N3bg44fSEP5NOnZWHWAg3w" Bounds="467,375" />
               <ControlPoint Id="SrxR8J2KC5AORg8ZIHSTau" Bounds="720,495" />
               <ControlPoint Id="CxbYkdIYJdDLo8NKVevVzq" Bounds="573,376" />
-              <ControlPoint Id="UrwqKLJyqzrNQmjWDJGqGI" Bounds="643,376" />
               <ControlPoint Id="QJQGLYAxSHRLcOVNSgLTvY" Bounds="186,353" />
               <Node Bounds="327,516,45,19" Id="BlkPRU8poQOOakqUO9NR0U">
                 <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
@@ -1158,7 +1160,6 @@
             <Patch Id="Cqy2xGS62fZOjSDSsYI9Xa" Name="Create" />
             <Patch Id="Pz7dnYaKrlZMRV6UD2v1RE" Name="Update">
               <Pin Id="R5uOsrxQRw0Mi4ujhjnMh3" Name="Grid Color" Kind="InputPin" Bounds="338,398" />
-              <Pin Id="DhgRdWmoANGL7W4LnySBlZ" Name="Grid Stroke Width" Kind="InputPin" Bounds="417,392" />
               <Pin Id="Hh9fnlFLlZOM9BJ7xjYgig" Name="Enabled" Kind="InputPin" Bounds="632,404" DefaultValue="True">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
@@ -1169,7 +1170,6 @@
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="U7hnkozzgbsLhYD1beHw7V" Name="Axis Stroke Width" Kind="InputPin" Bounds="617,373" />
               <Pin Id="FqcpVzMAWstQGsXuyPqhVj" Name="Center" Kind="InputPin" Bounds="275,380" />
               <Pin Id="Fs5LHc5CP5AOOR24wtFkpk" Name="Output" Kind="OutputPin" Bounds="334,567" />
               <Pin Id="LvtC5kKDlvHPYaOS43oYof" Name="Size" Kind="InputPin" Bounds="325,342" DefaultValue="10">
@@ -1188,10 +1188,8 @@
               <Fragment Id="N4Qx8MbRVT1NpjuoKEP6ob" Patch="Pz7dnYaKrlZMRV6UD2v1RE" Enabled="true" />
             </ProcessDefinition>
             <Link Id="JkNpKRHTmxfMwCLWEbFfWd" Ids="R5uOsrxQRw0Mi4ujhjnMh3,NH9h5ONNbvYMj6dvK3XSWT" IsHidden="true" />
-            <Link Id="RPTidO9zCOoNufHMb4ugIl" Ids="DhgRdWmoANGL7W4LnySBlZ,N3bg44fSEP5NOnZWHWAg3w" IsHidden="true" />
             <Link Id="CRoT7GmB5S2NqhB2t2yECf" Ids="Hh9fnlFLlZOM9BJ7xjYgig,SrxR8J2KC5AORg8ZIHSTau" IsHidden="true" />
             <Link Id="TIXhJI5EonKNUPLJMBmg9R" Ids="AwO4cXdqS3MNJeHaPUMtB3,CxbYkdIYJdDLo8NKVevVzq" IsHidden="true" />
-            <Link Id="DyAZ6C5Q3v1MvmoGZRH2I7" Ids="U7hnkozzgbsLhYD1beHw7V,UrwqKLJyqzrNQmjWDJGqGI" IsHidden="true" />
             <Link Id="O2dxEQv4fVLO8wuDPLbXsQ" Ids="FqcpVzMAWstQGsXuyPqhVj,QJQGLYAxSHRLcOVNSgLTvY" IsHidden="true" />
             <Link Id="UAg31jBHdbSOks9NPeM8r3" Ids="FTqVw6yjvufL8LmWHZRLcC,TyQoXYAthzVPpmHbaSww86" />
             <Link Id="RLLM0lbhAVlMmP3ulR2gaP" Ids="AyjQ8xo5QvUOpbDPU2QZuf,TzI8s1AW5f0P9XN2nRdk01" />
@@ -1200,9 +1198,7 @@
             <Link Id="NjKdg0ygDIsP2iXbbLGp0J" Ids="QJQGLYAxSHRLcOVNSgLTvY,OS0zzF9GqmtP0N1lkMpKZS" />
             <Link Id="VJMYvXHYLKbOhliblLLNeJ" Ids="QJQGLYAxSHRLcOVNSgLTvY,LxfNao78qPqQOTbpjlh7Tt" />
             <Link Id="C1eC2ef6IJaOQv6SKio8Tt" Ids="NH9h5ONNbvYMj6dvK3XSWT,KEP2THxl74GPZwT2i57fwl" />
-            <Link Id="RRiCWNhoycFMwYqIRmWERV" Ids="N3bg44fSEP5NOnZWHWAg3w,Npi876gb64kQcCOM7gy0gQ" />
             <Link Id="Gf1TdLjjp6lLmaa7LeBFrW" Ids="CxbYkdIYJdDLo8NKVevVzq,CRBCjF4LxmIOOi3fAPLgyZ" />
-            <Link Id="B0CvhOzRAfkP2SBBkz35Qm" Ids="UrwqKLJyqzrNQmjWDJGqGI,QFkp65Ps7cpL3RnSoS1paA" />
             <Link Id="MUVDX1vCWOMOb7J60II8bL" Ids="SrxR8J2KC5AORg8ZIHSTau,JOd6EJFH2vdLQc3KTsgTjr" />
             <Link Id="NpuPYPz08M8LfiE01vnBft" Ids="TwqabOCDVo8MIIvJIYhZTq,OpArkUYWQdsNZq8TEp6WrM" />
             <Link Id="H0N9mJ6YoozPU4uYwiaBuY" Ids="LvtC5kKDlvHPYaOS43oYof,TwqabOCDVo8MIIvJIYhZTq" IsHidden="true" />
@@ -4478,6 +4474,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.2-0130-g0559993bd7" />
-  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.2-0130-g0559993bd7" />
+  <NugetDependency Id="HC9db0aVgxtM4lvAlLtl2L" Location="VL.Skia" IsFriend="true" Version="2020.1.4" />
+  <NugetDependency Id="V7v6jp7Pl9dPfkyr1wb26R" Location="VL.EditingFramework" Version="2020.1.4" />
 </Document>
